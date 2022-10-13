@@ -1,0 +1,440 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+
+
+.material-symbols-outlined.md-24 {
+    font-size: 24px;
+}
+
+.material-symbols-outlined.md-36 {
+    font-size: 36px;
+}
+
+.material-symbols-outlined.md-48 {
+    font-size: 48px;
+}
+
+.material-symbols-outlined.md-150 {
+    font-size: 150px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* HEADER */
+
+#header {
+    height: 500px;
+    width: 100%;
+    background: -webkit-linear-gradient(rgba(0, 0, 0, 0.5),
+            rgba(8, 6, 12, 0.5)),
+        url("../img/books.jpg");
+    background-size: cover;
+    position: relative;
+    overflow: hidden;
+}
+
+.header {
+    margin-top: 170px;
+    color: #fff;
+    text-align: center;
+
+}
+
+.header h1 {
+    font-size: 100px;
+}
+
+.header p {
+    font-size: 20px;
+    margin-top: -20px;
+}
+
+#add-book-header {
+    background: #232322;
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* Float Button */
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background: #232322;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    box-shadow: 2px 2px 3px #999;
+
+    text-decoration: none;
+}
+
+.my-float {
+    margin: 5px;
+    font-size: 32px;
+}
+
+/* OVERLAY-FORM */
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.500);
+    border: 2px solid #232322;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+#close-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 50px;
+    height: 50px;
+    border: 2px solid #232322;
+    outline: none;
+    background-color: #fff;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.input-form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    width: 35%;
+    background: white;
+    border: 2px solid #232322;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #232322;
+    margin: auto;
+}
+
+.submit-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+}
+
+.submit-button {
+    flex-grow: 1;
+    margin: 20px 10px 20px 10px;
+}
+
+@media screen and (max-width: 992px) {
+    .close-btn {
+        top: 15px;
+        right: 15px;
+    }
+
+    .input-form {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .close-btn {
+        top: 15px;
+        right: 15px;
+    }
+
+    .input-form {
+        width: 80%;
+    }
+}
+
+.input-form h2 {
+    font-size: 2em;
+    font-weight: 700;
+    margin: 20px 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 85%;
+}
+
+form input {
+    width: 100%;
+    height: 65px;
+    border: none;
+    outline: none;
+    border: 1px solid #232323;
+    border-radius: 5px;
+    font-size: 1em;
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+.input-inline {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.input-inline input {
+    width: 4.5%;
+    height: 100%;
+    margin: 0 5px 0 -20px;
+    cursor: pointer;
+}
+
+form button {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    font-size: 1em;
+    display: block;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: 2px solid #232322;
+    margin: 10px 0 25px;
+    font-weight: bold;
+    cursor: pointer;
+    color: #232322;
+}
+
+form button:hover {
+    background-color: #232322;
+    color: white;
+
+}
+
+/*MAIN*/
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.wrapper .container {
+    width: 1000px;
+    ;
+    border-radius: 5px;
+    margin: 10px;
+    background: #FEF9ED;
+
+    padding: 15px;
+    height: fit-content;
+}
+
+.item {
+    border-radius: 5px;
+    margin-top: 16px;
+    padding: 12px 24px;
+    background: white;
+    display: flex;
+    align-items: center;
+    border: 2px solid #232322;
+}
+
+.item>.inner h2 {
+    margin-bottom: unset;
+}
+
+.item>.inner p {
+    margin-top: 5px;
+}
+
+
+.form {
+    display: flex;
+    padding: 16px;
+    flex-direction: column;
+    height: 300px;
+    border-radius: 16px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 4px;
+    font-size: 18;
+    font-weight: lighter;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.form-title {
+    margin: auto 0;
+}
+
+.check-button {
+    background: url('../assets/check-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('../assets/check-solid.svg');
+    background-size: contain;
+}
+
+.trash-button {
+    background: url('../assets/trash-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('../assets/trash-fill.svg');
+    background-size: contain;
+}
+
+.undo-button {
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+}
+
+.check-button:focus,
+.trash-button {
+    outline: none;
+}
+
+/* sahdlashn */
+
+.text-center {
+    text-align: center;
+}
+
+.form-title {
+    margin: auto 0;
+}
+
+.check-button {
+    background: url('../assets/check-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.check-button:hover {
+    background: url('../assets/check-solid.svg');
+    background-size: contain;
+}
+
+.trash-button {
+    background: url('../assets/trash-outline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: 16px;
+    cursor: pointer;
+    border: none;
+}
+
+.trash-button:hover {
+    background: url('../assets/trash-fill.svg');
+    background-size: contain;
+}
+
+.undo-button {
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+    width: 40px;
+    height: 40px;
+    margin-left: auto;
+    cursor: pointer;
+    border: none;
+}
+
+.undo-button:hover {
+    background: url('../assets/undo-ouline.svg');
+    background-size: contain;
+}
+
+.check-button:focus,
+.trash-button {
+    outline: none;
+}
+
+@media only screen and (max-width: 1024px) {
+    .wrapper {
+        margin: 0;
+    }
+
+    .wrapper .container {
+        width: 100%;
+    }
+
+    .list-item {
+        padding: 0 25px;
+    }
+
+    .form {
+        width: 100%;
+    }
+
+    .header h1 {
+        font-size: 80px;
+    }
+
+    .header p {
+        font-size: 15px;
+    }
+
+}
+
+div h5 {
+    font-weight: 600;
+}
